@@ -12,6 +12,30 @@
             Helvetica,
             sans-serif;
         }
+        @mixin flexCenter {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+*, *:after {
+box-sizing: border-box;
+}
+html {
+font-size: 100vmax / 1600 * 100;
+@media (max-width: 992px) {
+font-size: 60px;
+}
+}
+body {
+min-height: 100vh;
+@include flexCenter;
+background: #c4d8c4 radial-gradient(circle, #fff 1px, transparent 0) repeat center / 30px 30px;
+font-size: 0.3rem;
+font-family: "Bricolage Grotesque", sans-serif;
+font-weight: bold;
+}
+
 
         .topnav {
             overflow: hidden;
@@ -110,8 +134,6 @@
 </div>
 </div>
 </body>
-<h1>Welcome To Vacation</h1>
+<h1>Welcome to Love Trip</h1>
+<img class src="https://cdn.quizly.co/wp-content/uploads/2025/01/20142700/Pink-Places-Geography-Quiz.webp">
 
-<p>A dream like area,where we give people the best places around the continents for there Vacation</p>
-<img class src="https://img.freepik.com/free-photo/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand_335224-849.jpg">
- </htmly>
