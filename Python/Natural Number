@@ -1,0 +1,30 @@
+N = 10
+print(f"Natural numbers from 1 to {N}:")
+for i in range(1, N + 1):
+    print(i, end=' ')
+print()
+
+
+count = 1
+print("First 5 natural numbers:")
+while count <= 5:
+    print(count)
+    count += 1
+
+
+natural_numbers_list = [i for i in range(1, 11)]
+print(f"List of natural numbers: {natural_numbers_list}")
+
+
+natural_numbers_list_2 = list(range(1, 6))
+print(f"Another list of natural numbers: {natural_numbers_list_2}")
+
+
+def is_natural_number(num):
+    """Checks if a given number is a natural number (positive integer)."""
+    return isinstance(num, int) and num > 0
+
+print(f"Is 7 a natural number? {is_natural_number(7)}")
+print(f"Is 0 a natural number? {is_natural_number(0)}")
+print(f"Is -3 a natural number? {is_natural_number(-3)}")
+print(f"Is 3.14 a natural number? {is_natural_number(3.14)}")
