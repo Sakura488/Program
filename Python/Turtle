@@ -1,0 +1,10 @@
+import turtle
+pen = turtle. Turtle()
+def draw_polygon_recursive(sides, length, count=0):
+ if count == sides:
+  return
+pen. forward (length)
+pen.right(360 / sides)
+draw_polygon_recursivesides, length, count + 1
+draw_polygon_recursive(5, 100) # Draws a pentagon
+turtle. done()
